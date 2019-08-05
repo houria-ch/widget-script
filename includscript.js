@@ -1,9 +1,9 @@
  (function() {
      var IDelement = document.getElementById('custplaceWidget');
-     var marque = IDelement.getAttribute('data-id-marque');
+     var marque = IDelement.getAttribute('data-id-marque'); //pour obtenir la valeur du data attribute.
      if (IDelement && marque) {
          var frame = document.createElement('iframe');
-         frame.src = "file:///C:/Users/youcode/Desktop/Projet%20Test/template/index.html#" + marque;
+         frame.src = "https://houria-ch.github.io/widget/#" + marque;
          IDelement.appendChild(frame);
          frame.style.height = "195px";
          frame.style.paddingTop = "25px";
